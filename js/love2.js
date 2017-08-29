@@ -113,8 +113,10 @@ $(function () {
                 layer.add(lines[index ++]);
                 layer.draw();
             }else{
-                stage.stop();
+                anim.stop();
             }
      }, layer);
     anim.start();
+    var toJSON = stage.toJSON();
+    console.log(toJSON);
 });
