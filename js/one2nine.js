@@ -53,7 +53,7 @@ $(function () {
             layer.clear();
             layer.draw();
         };
-        group.on('click', function (event) {
+        group.on('click tap', function (event) {
             // Up
             var name = this.name();
             var upName = name - 4;
