@@ -5,12 +5,12 @@ $(function () {
     // setup garden
 
 	$loveHeart = $("#loveHeart");
-    window.offsetX = $loveHeart.width() / 2;
-    window.offsetY = $loveHeart.height() / 2 - 55;
+    window.offsetX = $window.width() / 2;
+    window.offsetY = $window.width() / 2;
     $garden = $("#garden");
     gardenCanvas = $garden[0];
-	gardenCanvas.width = $("#loveHeart").width();
-    gardenCanvas.height = $("#loveHeart").height();
+	gardenCanvas.width = $window.width();
+    gardenCanvas.height = $window.height();
     gardenCtx = gardenCanvas.getContext("2d");
     gardenCtx.globalCompositeOperation = "lighter";
     garden = new Garden(gardenCtx, gardenCanvas);
