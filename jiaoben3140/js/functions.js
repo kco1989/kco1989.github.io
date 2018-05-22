@@ -3,7 +3,7 @@ var $window = $(window), gardenCtx, gardenCanvas, $garden, garden;
 
 $(function () {
     // setup garden
-
+    $window = $(window)
 	$loveHeart = $("#loveHeart");
     window.offsetX = $window.width() / 2;
     window.offsetY = $window.height() / 2 - 55;
