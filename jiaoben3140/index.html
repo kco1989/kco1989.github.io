@@ -1,106 +1,121 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
 
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <title>亲爱的小丹,生日快乐</title>
 
   <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
   <script src="js/shine-text.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="js/cake.js"></script>
 </head>
 
 <body>
-<div class="velas">
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
+
+<canvas id="canvas"  width="200" height="400"></canvas>
+<canvas id="garden"></canvas>
+<div id="velas" >
+    <div class="velas">
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+    </div>
+
+    <div class="velas-1">
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+    </div>
+
+    <div class="velas1">
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+    </div>
+
+    <div class="velas-2">
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+    </div>
+
+    <div class="velas2">
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+    </div>
+
+    <div class="velas-3">
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+    </div>
+
+    <div class="velas3">
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+    </div>
+
+    <div class="velas-4">
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+    </div>
+
+    <div class="velas4">
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+    </div>
+
+    <div class="velas-5">
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+    </div>
+
+    <div class="velas5">
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+        <div class="fuego"></div>
+    </div>
 </div>
 
-<div class="velas-1">
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-</div>
-
-<div class="velas1">
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-</div>
-
-<div class="velas-2">
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-</div>
-
-<div class="velas2">
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-</div>
-
-<div class="velas-3">
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-</div>
-
-<div class="velas3">
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-</div>
-
-<div class="velas-4">
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-</div>
-
-<div class="velas4">
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-</div>
-
-<div class="velas-5">
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-</div>
-
-<div class="velas5">
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-    <div class="fuego"></div>
-</div>
-
-<svg id="cake" version="1.1" x="0px" y="0px" width="200px" height="500px" viewBox="0 0 200 500" enable-background="new 0 0 200 500" xml:space="preserve">
+<svg id="cake"  version="1.1" x="0px" y="0px" width="200px" height="500px" viewBox="0 0 200 500" enable-background="new 0 0 200 500" xml:space="preserve">
     <path fill="#a88679" d="M173.667-13.94c-49.298,0-102.782,0-147.334,0c-3.999,0-4-16.002,0-16.002
 		c44.697,0,96.586,0,147.334,0C177.667-29.942,177.668-13.94,173.667-13.94z">
         <animate id="bizcocho_3" attributeName="d" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1" begin="relleno_2.end" dur="0.3s" fill="freeze" values="
@@ -251,235 +266,24 @@
 
 <div>
     <p id="title">
-        亲爱的小丹:
+        亲爱的小丹
     </p>
-	<br />
-	<p id="message">
-	Our life won't start until we find something that worths the cost of our life. When your reshape your reality, you change your destiny.<br />
-	</p>
 </div>
-<canvas id="canvas" width="200" height="200"></canvas>
 
+<br>
+<div id="loveHeart">
 
-<script>
-window.requestAnimFrame = ( function() {
-	return window.requestAnimationFrame ||
-				window.webkitRequestAnimationFrame ||
-				window.mozRequestAnimationFrame ||
-				function( callback ) {
-					window.setTimeout( callback, 1000 / 60 );
-				};
-})();
-var canvas = document.getElementById( 'canvas' ),
-		ctx = canvas.getContext( '2d' ),
-		cw = window.innerWidth,
-		ch = window.innerHeight,
-		fireworks = [],
-		particles = [],
-		hue = 120,
-		limiterTotal = 5,
-		limiterTick = 0,
-		timerTotal = 80,
-		timerTick = 0,
-		mousedown = false,
-		mx,
-		my;
-		
-canvas.width = cw;
-canvas.height = ch;  
-
-function random( min, max ) {
-	return Math.random() * ( max - min ) + min;
-}
-
-function calculateDistance( p1x, p1y, p2x, p2y ) {
-	var xDistance = p1x - p2x,
-			yDistance = p1y - p2y;
-	return Math.sqrt( Math.pow( xDistance, 2 ) + Math.pow( yDistance, 2 ) );
-}
-
-function Firework( sx, sy, tx, ty ) {
-	
-	this.x = sx;
-	this.y = sy;
-	
-	this.sx = sx;
-	this.sy = sy;
-	
-	this.tx = tx;
-	this.ty = ty;
-	
-	this.distanceToTarget = calculateDistance( sx, sy, tx, ty );
-	this.distanceTraveled = 0;
-	
-	this.coordinates = [];
-	this.coordinateCount = 3;
-	
-	while( this.coordinateCount-- ) {
-		this.coordinates.push( [ this.x, this.y ] );
-	}
-	this.angle = Math.atan2( ty - sy, tx - sx );
-	this.speed = 2;
-	this.acceleration = 1.05;
-	this.brightness = random( 50, 70 );
-	
-	this.targetRadius = 1;
-}
-
-
-Firework.prototype.update = function( index ) {
-	
-	this.coordinates.pop();
-	
-	this.coordinates.unshift( [ this.x, this.y ] );
-	
-	if( this.targetRadius < 8 ) {
-		this.targetRadius += 0.3;
-	} else {
-		this.targetRadius = 1;
-	}
-	
-	this.speed *= this.acceleration;
-	
-	var vx = Math.cos( this.angle ) * this.speed,
-			vy = Math.sin( this.angle ) * this.speed;
-	
-	this.distanceTraveled = calculateDistance( this.sx, this.sy, this.x + vx, this.y + vy );
-	
-	if( this.distanceTraveled >= this.distanceToTarget ) {
-		createParticles( this.tx, this.ty );
-		fireworks.splice( index, 1 );
-	} else {
-		this.x += vx;
-		this.y += vy;
-	}
-}
-
-Firework.prototype.draw = function() {
-	ctx.beginPath();
-	ctx.moveTo( this.coordinates[ this.coordinates.length - 1][ 0 ], this.coordinates[ this.coordinates.length - 1][ 1 ] );
-	ctx.lineTo( this.x, this.y );
-	ctx.strokeStyle = 'hsl(' + hue + ', 100%, ' + this.brightness + '%)';
-	ctx.stroke();
-	
-	ctx.beginPath();
-	ctx.arc( this.tx, this.ty, this.targetRadius, 0, Math.PI * 2 );
-	ctx.stroke();
-}
-
-function Particle( x, y ) {
-	this.x = x;
-	this.y = y;
-	
-	this.coordinates = [];
-	this.coordinateCount = 5;
-	while( this.coordinateCount-- ) {
-		this.coordinates.push( [ this.x, this.y ] );
-	}
-	
-	this.angle = random( 0, Math.PI * 2 );
-	this.speed = random( 1, 10 );
-	
-	this.friction = 0.95;
-	this.gravity = 1;
-	
-	this.hue = random( hue - 20, hue + 20 );
-	this.brightness = random( 50, 80 );
-	this.alpha = 1;
-	this.decay = random( 0.015, 0.03 );
-}
-
-Particle.prototype.update = function( index ) {
-	
-	this.coordinates.pop();
-	this.coordinates.unshift( [ this.x, this.y ] );
-	this.speed *= this.friction;
-	this.x += Math.cos( this.angle ) * this.speed;
-	this.y += Math.sin( this.angle ) * this.speed + this.gravity;
-	this.alpha -= this.decay;
-	
-	if( this.alpha <= this.decay ) {
-		particles.splice( index, 1 );
-	}
-}
-
-Particle.prototype.draw = function() {
-	ctx. beginPath();
-	ctx.moveTo( this.coordinates[ this.coordinates.length - 1 ][ 0 ], this.coordinates[ this.coordinates.length - 1 ][ 1 ] );
-	ctx.lineTo( this.x, this.y );
-	ctx.strokeStyle = 'hsla(' + this.hue + ', 100%, ' + this.brightness + '%, ' + this.alpha + ')';
-	ctx.stroke();
-}
-
-function createParticles( x, y ) {
-	var particleCount = 30;
-	while( particleCount-- ) {
-		particles.push( new Particle( x, y ) );
-	}
-}
-
-
-function loop() {
-	requestAnimFrame( loop );
-	
-	hue += 0.5;
-	
-	ctx.globalCompositeOperation = 'destination-out';
-	ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
-	ctx.fillRect( 0, 0, cw, ch );
-	ctx.globalCompositeOperation = 'lighter';
-	
-	var i = fireworks.length;
-	while( i-- ) {
-		fireworks[ i ].draw();
-		fireworks[ i ].update( i );
-	}
-	
-	var i = particles.length;
-	while( i-- ) {
-		particles[ i ].draw();
-		particles[ i ].update( i );
-	}
-	
-	if( timerTick >= timerTotal ) {
-		if( !mousedown ) {
-		    for (var index = 0; index < 10; index ++){
-                fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
-            }
-			timerTick = 0;
-		}
-	} else {
-		timerTick++;
-	}
-	
-	if( limiterTick >= limiterTotal ) {
-		if( mousedown ) {
-			fireworks.push( new Firework( cw / 2, ch, mx, my ) );
-			limiterTick = 0;
-		}
-	} else {
-		limiterTick++;
-	}
-}
-
-canvas.addEventListener( 'mousemove', function( e ) {
-	mx = e.pageX - canvas.offsetLeft;
-	my = e.pageY - canvas.offsetTop;
-});
-
-canvas.addEventListener( 'mousedown', function( e ) {
-	e.preventDefault();
-	mousedown = true;
-});
-
-canvas.addEventListener( 'mouseup', function( e ) {
-	e.preventDefault();
-	mousedown = false;
-});
-
-window.onload = loop;
-</script>
-
-<audio autoplay="autoplay" loop="loop" preload="auto" src="Happy_Birthday.mp3" type="audio/wav"></audio>
+    <!--<div id="words">-->
+        <!--<div id="messages">-->
+            <!--亲爱的，这是我们相爱在一起的时光。-->
+            <!--<div id="elapseClock"></div>-->
+        <!--</div>-->
+        <!--<div id="loveu">-->
+            <!--爱你直到永永远远。<br/>-->
+            <!--<div class="signature">- 李先生</div>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+<!--<audio autoplay="autoplay" loop="loop" preload="auto" src="Happy_Birthday.mp3" type="audio/wav"></audio>-->
 </body>
 </html>
