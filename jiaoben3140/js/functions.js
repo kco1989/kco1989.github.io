@@ -6,7 +6,7 @@ $(function () {
 
 	$loveHeart = $("#loveHeart");
     window.offsetX = $window.width() / 2;
-    window.offsetY = $window.width() / 2;
+    window.offsetY = $window.height() / 2 - 55;
     $garden = $("#garden");
     gardenCanvas = $garden[0];
 	gardenCanvas.width = $window.width();
