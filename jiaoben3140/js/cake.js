@@ -180,7 +180,7 @@ $(function () {
 
         if( timerTick >= timerTotal ) {
             if( !mousedown ) {
-                for (var index = 0; index < 5; index ++){
+                for (var index = 0; index < 3; index ++){
                     fireworks.push( new Firework( cw / 2, ch, random( 0, cw ), random( 0, ch / 2 ) ) );
                 }
                 timerTick = 0;
@@ -199,17 +199,17 @@ $(function () {
         }
     }
 
-    canvas.addEventListener( 'mousemove,touchmove', function( e ) {
+    canvas.addEventListener( 'mousemove', function( e ) {
         mx = e.pageX - canvas.offsetLeft;
         my = e.pageY - canvas.offsetTop;
     });
 
-    canvas.addEventListener( 'mousedown, touchstart', function( e ) {
+    canvas.addEventListener( 'mousedown ', function( e ) {
         e.preventDefault();
         mousedown = true;
     });
 
-    canvas.addEventListener( 'mouseup, touchend', function( e ) {
+    canvas.addEventListener( 'mouseup', function( e ) {
         e.preventDefault();
         mousedown = false;
     });
